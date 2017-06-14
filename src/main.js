@@ -5,7 +5,6 @@ import 'iview/dist/styles/iview.css'
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import iview from 'iview'
 import axios from './util/index'
 import store from './store'
 
@@ -14,7 +13,6 @@ import Locales from './locale'
 import zhLocale from 'iview/src/locale/lang/zh-CN'
 import enLocale from 'iview/src/locale/lang/en-US'
 
-Vue.use(iview)
 Vue.use(VueI18n)
 
 Vue.config.productionTip = false

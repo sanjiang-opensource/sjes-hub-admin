@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import iView from 'iview'
+import LoadingBar from 'iview/src/components/loading-bar'
 import Hello from '@/components/Hello'
 
 Vue.use(Router)
@@ -16,12 +16,12 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  iView.LoadingBar.start()
+  LoadingBar.start()
   next()
 })
 
 router.afterEach(() => {
-  iView.LoadingBar.finish()
+  LoadingBar.finish()
   window.scrollTo(0, 0)
 })
 
