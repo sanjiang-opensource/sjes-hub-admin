@@ -59,3 +59,10 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+server/logs/
+server/npm-debug.log
+server/node_modules/
+server/coverage/
+server/run/
+
+
